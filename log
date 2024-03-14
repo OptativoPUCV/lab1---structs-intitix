@@ -23,3 +23,19 @@ Thu 14 Mar 2024 08:42:03 PM UTC:
  tests:  0|6
 total_score: 10/70
 9c7423d
+Thu 14 Mar 2024 08:51:14 PM UTC: 
+ exercises.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:86:3: error: implicit declaration of function ‘strcopy’; did you mean ‘strcpy’? [-Werror=implicit-function-declaration]
+   86 |   strcopy(libro->titulo, titulo);
+      |   ^~~~~~~
+      |   strcpy
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:46:1: error: control reaches end of non-void function [-Werror=return-type]
+   46 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+5f764d3

@@ -40,7 +40,10 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+
+  
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
@@ -79,7 +82,10 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+                      int anioNacimiento, int anioPublicacion) {
+  strcopy(libro->titulo, titulo);
+  strcopy(libro->autor.nombre, nombreAutor);
+                      }
 
 /*
 Ejercicio 7: Lista enlazada de números
