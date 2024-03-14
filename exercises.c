@@ -42,7 +42,7 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
 
-  
+ return 0; 
 }
 
 /*
