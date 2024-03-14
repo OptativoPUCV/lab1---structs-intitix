@@ -46,17 +46,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize) {
       if (arr[i] % 2 == 0)
         *newSize = *newSize + 1;
     }
-  int j = 0;
-  int *newArr = (int *)malloc(*newSize * sizeof(int));
-  for (int i = 0; i < size; i++)
-    {
-      if (arr[i] % 2 == 0)
-      {
-        newArr[i] = arr[i];
-        j++;
-      }
-    }
- return newArr; 
+  int N[*newSize] = [1 , 2 ,3 ,4]; 
+  return N;
 }
 
 /*

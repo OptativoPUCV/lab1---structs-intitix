@@ -103,3 +103,29 @@ Thu 14 Mar 2024 09:06:27 PM UTC:
  tests:  0|5
 total_score: 20/70
 11d05a4
+Thu 14 Mar 2024 09:12:15 PM UTC: 
+ exercises.c | 13 ++-----------
+ 1 file changed, 2 insertions(+), 11 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:49:3: error: variable-sized object may not be initialized
+   49 |   int N[*newSize] = [1 , 2 ,3 ,4];
+      |   ^~~
+exercises.c:49:21: error: expected expression before ‘[’ token
+   49 |   int N[*newSize] = [1 , 2 ,3 ,4];
+      |                     ^
+exercises.c:49:24: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   49 |   int N[*newSize] = [1 , 2 ,3 ,4];
+      |                        ^
+exercises.c:49:28: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   49 |   int N[*newSize] = [1 , 2 ,3 ,4];
+      |                            ^
+exercises.c:49:31: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+   49 |   int N[*newSize] = [1 , 2 ,3 ,4];
+      |                               ^
+exercises.c:50:10: error: function returns address of local variable [-Werror=return-local-addr]
+   50 |   return N;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+435760c
