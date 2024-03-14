@@ -135,3 +135,13 @@ Thu 14 Mar 2024 09:14:01 PM UTC:
  tests:  0|5
 total_score: 20/70
 22660bb
+Thu 14 Mar 2024 09:15:06 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:49:17: error: expected expression before ‘[’ token
+   49 |   int *newArr = [4];
+      |                 ^
+Compilation failed
+9414f85
