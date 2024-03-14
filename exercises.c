@@ -41,12 +41,13 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
+  *newSize = 0;
   for (int i = 0; i < size; i++)
     {
       if (arr[i] % 2 == 0)
         *newSize = *newSize + 1;
     }
-  int *newArr = [4];
+  int *newArr = 
 
   return newArr;
 }
