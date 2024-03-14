@@ -41,8 +41,15 @@ newsize apunta a una dirección válida que no ha sido inicializada con nigún v
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
-
- return 0; 
+  int *newArr = (int *)malloc(size * sizeof(int));
+  int j = 0;
+  for (int i = 0; i < size; i++)
+    {
+      if (arr[i] % 2 == 0){}
+        newArr[j] = arr[i];
+        j++;
+    }
+ return newArr; 
 }
 
 /*
@@ -87,7 +94,7 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   strcpy(libro->autor.nombre, nombreAutor);
   libro->anioPublicacion = anioPublicacion;
   libro->autor.anioNacimiento = anioNacimiento;
-                      }
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
