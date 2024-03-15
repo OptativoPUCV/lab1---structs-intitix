@@ -119,7 +119,7 @@ int checkSorted(int arr[], int size) {
           {
             ascensos++;
           }
-          printf("as= %d des= %d", ascensos, descensos);
+          printf("as= %d des= %d size: %d ", ascensos, descensos, size);
           if ((ascensos > 0) && (descensos > 0))
             return 0;
         }
