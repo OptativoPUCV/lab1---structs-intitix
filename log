@@ -226,3 +226,14 @@ Fri 15 Mar 2024 01:43:29 AM UTC:
  tests:  0|3
 total_score: 40/70
 556979c
+Fri 15 Mar 2024 01:47:29 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:75:7: error: unused variable ‘sizeTot’ [-Werror=unused-variable]
+   75 |   int sizeTot = size1 + size2;
+      |       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7354348
