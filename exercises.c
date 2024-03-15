@@ -175,6 +175,7 @@ typedef struct nodo {
 Nodo *crearListaEnlazada(int arr[], int size) { 
   Nodo *cabeza = NULL;
   cabeza->numero = arr[0];
+  cabeza->siguiente = NULL;
   Nodo *ultimo = NULL;
   
   for (int i = 1; i < size; i++)
